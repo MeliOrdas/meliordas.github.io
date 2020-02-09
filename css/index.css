@@ -527,6 +527,7 @@
     position: relative;
     display: table-cell;
     vertical-align: middle;
+    font-size: 0;
     /* display: flex;
     justify-content: space-around;
     align-items: center; */
@@ -626,7 +627,7 @@
 }
 
 .firstRight .user {
-    height: 145px;
+    height: 140px;
     padding-top: 5px;
     background-image: url(../images/user_bg.png);
 }
@@ -659,4 +660,106 @@
     display: inline-block;
     font-size: 12px;
     border-radius: 9px;
+    padding: 0 10px 0 20px;
+    margin: 0 2px;
+
+    /* background: #ffe4dc; */
+
+
+}
+
+.firstRight .user .members a.gold {
+    background: #ffe4dc url(../images/ico.png) 0 -572px no-repeat;
+}
+
+.firstRight .user .members a.club {
+    background: #ffe4dc url(../images/ico.png) 0 -527px no-repeat;
+}
+
+
+.firstRight .user .btn {
+    text-align: center;
+}
+
+.firstRight .user .btn button {
+    text-align: center;
+    width: 75px;
+    height: 25px;
+    line-height: 25px;
+    margin: 12px 2px 0 2px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 4px;
+    border: none;
+    background-image: linear-gradient(to right, #ff9000, #ff5000);
+    cursor: pointer;
+}
+
+.firstRight .user .btn button.login {
+    width: 92px;
+}
+
+.firstRight .inform {
+    display: block;
+    height: 26px;
+    line-height: 26px;
+    color: #f40;
+    background-color: #ffe4dc;
+    text-align: center;
+}
+
+.firstRight .inform i {
+    font-size: 12px;
+    position: relative;
+    left: 30px;
+}
+
+.firstRight .notice {
+    height: 108px;
+    background-color: #fff;
+}
+
+.firstRight .notice .title {
+    text-align: center;
+    font-size: 0;
+    padding-top: 10px;
+}
+
+.firstRight .notice .title li {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0 4px;
+    margin: 0 10px;
+}
+
+.firstRight .notice .title li.active {
+    font-weight: bold;
+    border-bottom: 2px solid #f40;
+}
+
+.firstRight .notice .title li a:hover {
+    color: #f40;
+}
+
+.firstRight .notice .content {
+    margin: 0 12px;
+    padding-top: 10px;
+}
+
+.firstRight .notice .content li {
+    height: 25px;
+    line-height: 25px;
+    float: left;
+    overflow: hidden;
+    width: 130px;
+}
+
+.firstRight .notice .content li a:hover {
+    color: #ff5000;
+}
+
+.firstRight .notice .content li.item1 {
+    width: 100%;
+    color: #ff5000;
 }
