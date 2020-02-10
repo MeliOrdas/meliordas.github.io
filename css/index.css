@@ -623,7 +623,6 @@
 #firstScreen .firstRight {
     width: 290px;
     margin-top: 10px;
-    background-color: burlywood;
 }
 
 .firstRight .user {
@@ -762,4 +761,122 @@
 .firstRight .notice .content li.item1 {
     width: 100%;
     color: #ff5000;
+}
+
+/* 图标区域 */
+.firstRight .icon {
+    width: 100%;
+    height: 231px;
+    background-color: #fff;
+    /* 定义列宽的算法 , fixed的计算方式根据表格宽度自动计算列宽 , 每列的宽度均为整个表格的宽度 */
+    table-layout: fixed;
+}
+
+.firstRight .icon td {
+    border: 1px solid #f4f4f4;
+    text-align: center;
+}
+
+.firstRight .icon td span {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 0 auto;
+    background: url(../images/ico.png) no-repeat;
+
+}
+
+.firstRight .icon td i {
+    line-height: 34px;
+    color: #333;
+}
+
+
+.firstRight .icon .item1 span {
+    background-position: 0 0;
+}
+
+.firstRight .icon .item2 span {
+    background-position: 0 -87px;
+}
+
+.firstRight .icon .item3 span {
+    background-position: 0 -44px;
+}
+
+.firstRight .icon .item4 span {
+    background-position: 0 -132px;
+}
+
+.firstRight .icon .item5 span {
+    background-position: 0 -176px;
+}
+
+.firstRight .icon .item6 span {
+    background-position: 0 -220px;
+}
+
+.firstRight .icon .item7 span {
+    background-position: 0 -264px;
+}
+
+.firstRight .icon .item8 span {
+    background-position: 0 -308px;
+}
+
+.firstRight .icon .item9 span {
+    background-position: 0 -352px;
+}
+
+.firstRight .icon .item10 span {
+    background-position: 0 -396px;
+}
+
+.firstRight .icon .item11 span {
+    background-position: 0 -440px;
+}
+
+.firstRight .icon .item12 span {
+    background-position: 0 -484px;
+}
+
+
+/* APP */
+
+.firstRight .app {
+    height: 111px;
+    background: #fff;
+}
+
+.firstRight .app .title {
+    height: 30px;
+    line-height: 30px;
+}
+
+.firstRight .app h3 {
+    font-size: 14px;
+    padding-left: 14px;
+}
+
+.firstRight .app .title a {
+    padding-right: 10px;
+}
+
+.firstRight .app .title a:hover {
+    color: #f40;
+}
+
+.firstRight .app .appIcon {
+    text-align: center;
+    font-size: 0;
+}
+
+.firstRight .app .appIcon li {
+    display: inline-block;
+    padding: 0 10px 8px 10px;
+}
+
+.firstRight .app .appIcon li img {
+    width: 32px;
+    height: 32px;
 }
