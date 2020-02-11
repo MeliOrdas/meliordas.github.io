@@ -150,7 +150,8 @@
     display: block;
     width: 190px;
     height: 58px;
-    background: url(../images/logo.png) center no-repeat;
+    background: url(../images/tobao_one.png) center no-repeat;
+    background-size: 143px 58px;
     font-size: 0;
     margin-top: 8px;
 }
@@ -312,7 +313,7 @@
     /* width: calc(100% - 190px);
     background-image: linear-gradient(to right, #ff9000, #ff5000); */
     background-image: linear-gradient(to right, #ff9000, #ff5000);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff9000', endColorstr='#ffff5000', GradientType=1)
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff9000', endColorstr='#ffff5000', GradientType=1);
 }
 
 #nav ul li {
@@ -398,7 +399,6 @@
 #firstScreen .sideNav li span {
     font-size: 12px;
     margin-right: 5px;
-
 }
 
 .firstLeft .img1Box {
@@ -550,13 +550,11 @@
     margin-top: 10px;
     box-sizing: border-box;
     padding: 13px 13px 13px 20px;
-
 }
 
 .firstLeft .news .hd {
     margin-top: 15px;
 }
-
 
 .firstLeft .news .hd p {
     color: #999;
@@ -568,14 +566,12 @@
     height: 26px;
     background: url(../images/news_logo.png) no-repeat;
     font-size: 0;
-
 }
 
 .firstLeft .news .newList {
     width: 680px;
     position: relative;
 }
-
 
 .firstLeft .news .newList .img {
     margin-right: 15px;
@@ -617,7 +613,6 @@
     right: 0px;
     color: #999;
 }
-
 
 /* 右导航内容 */
 #firstScreen .firstRight {
@@ -663,8 +658,6 @@
     margin: 0 2px;
 
     /* background: #ffe4dc; */
-
-
 }
 
 .firstRight .user .members a.gold {
@@ -674,7 +667,6 @@
 .firstRight .user .members a.club {
     background: #ffe4dc url(../images/ico.png) 0 -527px no-repeat;
 }
-
 
 .firstRight .user .btn {
     text-align: center;
@@ -783,14 +775,12 @@
     height: 24px;
     margin: 0 auto;
     background: url(../images/ico.png) no-repeat;
-
 }
 
 .firstRight .icon td i {
     line-height: 34px;
     color: #333;
 }
-
 
 .firstRight .icon .item1 span {
     background-position: 0 0;
@@ -839,7 +829,6 @@
 .firstRight .icon .item12 span {
     background-position: 0 -484px;
 }
-
 
 /* APP */
 
@@ -1005,4 +994,72 @@
 
 .goods .list li .comment i {
     color: #999;
+}
+
+/* 右侧固定定位导航start */
+
+#tool {
+    width: 50px;
+    height: 350px;
+    /* background-color: #ffe4dc; */
+    position: fixed;
+    top: 100px;
+    right: 10px;
+    /* border: 1px solid #f00; */
+}
+
+#tool span {
+    font-size: 32px;
+    color: #ff7f13;
+    height: 50px;
+    line-height: 36px;
+    top: -28px;
+    right: 10px;
+    /* overflow: hidden; */
+    position: absolute;
+}
+
+#tool div {
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#tool a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background: #fff;
+    word-break: keep-all;
+
+    box-sizing: border-box;
+    padding-top: 6px;
+    position: relative;
+}
+
+#tool a:after {
+    content: "";
+    border-bottom: 1px solid #efefef;
+    width: 34px;
+    position: absolute;
+    left: 8px;
+    bottom: 0;
+}
+
+#tool a.item6 {
+    line-height: 40px;
+}
+
+
+#tool a:hover,
+#tool a.active {
+    background-image: linear-gradient(135deg, #ff9000, #ff5000);
+    color: #fff;
+    font-weight: bold;
+}
+
+#tool a:hover::after,
+#tool a.active::after {
+    border: none;
 }
