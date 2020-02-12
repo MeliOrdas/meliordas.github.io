@@ -377,6 +377,53 @@
     font-size: 14px;
 }
 
+#firstScreen .img1Box .slideShow {
+    width: 520px;
+    height: 280px;
+    position: relative;
+}
+
+#firstScreen .img1Box .slideShow .itemAdd {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 1s;
+    position: absolute;
+}
+
+#firstScreen .img1Box .slideShow .itemAdd:nth-child(1) {
+    background: url(../images/jpg1.jpg) no-repeat;
+}
+
+#firstScreen .img1Box .slideShow .itemAdd:nth-child(2) {
+    background: url(../images/jpg2.jpg) no-repeat;
+}
+
+#firstScreen .img1Box .slideShow .itemAdd:nth-child(3) {
+    background: url(../images/jpg3.jpg) no-repeat;
+}
+
+#firstScreen .img1Box .slideShow .itemAdd:nth-child(4) {
+    background: url(../images/jpg4.jpg) no-repeat;
+}
+
+#firstScreen .img1Box .slideShow .itemAdd:nth-child(5) {
+    background: url(../images/jpg5.jpg) no-repeat;
+}
+
+#firstScreen .img1Box .slideShow .itemAdd a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#firstScreen .img1Box .slideShow .itemAdd.active {
+    z-index: 10;
+    opacity: 2;
+}
+
+
+
 #firstScreen .sideNav li:hover {
     background-color: #ffe4dc;
     color: #f50;
@@ -434,6 +481,7 @@
 
 .firstLeft .pic:hover button {
     display: block;
+    z-index: 200;
 }
 
 .firstLeft .pic .leftBtn {
@@ -450,6 +498,7 @@
     position: absolute;
     bottom: 15px;
     left: 50%;
+    z-index: 101;
 
     background-color: rgba(69, 66, 70, 0.251);
     border-radius: 10px;
@@ -458,7 +507,7 @@
     margin-left: -35px;
 }
 
-.firstLeft .pic .circle span {
+.firstLeft .pic .circle li {
     display: inline-block;
     width: 8px;
     height: 8px;
@@ -468,7 +517,7 @@
     cursor: pointer;
 }
 
-.firstLeft .pic .circle span.active {
+.firstLeft .pic .circle li.active {
     background-color: #ff5000;
 }
 

@@ -273,14 +273,24 @@
             <div class="img1Box fr">
                 <div class="pic fl">
                     <div class="img">
-                        <a href~="#"><img src="images/pic_01.jpg" alt=""></a>
+                        <ul class="slideShow">
+                            <li class="itemAdd active"><a href="#"></a></li>
+                            <li class="itemAdd"><a href="#"></a></li>
+                            <li class="itemAdd"><a href="#"></a></li>
+                            <li class="itemAdd"><a href="#"></a></li>
+                            <li class="itemAdd"><a href="#"></a></li>
+                        </ul>
                     </div>
 
-                    <button class="iconfont leftBtn">&#xe64e; </button>
-                    <button class="iconfont rightBtn">&#xe6ab;</button>
+                    <button class="iconfont leftBtn" id="prev">&#xe64e;</button>
+                    <button class="iconfont rightBtn" id="next">&#xe6ab;</button>
 
                     <div class="circle">
-                        <span class="active"></span><span></span><span></span><span></span><span></span>
+                        <li class="pointer active"></li>
+                        <li class="pointer"></li>
+                        <li class="pointer"></li>
+                        <li class="pointer"></li>
+                        <li class="pointer"></li>
                     </div>
                 </div>
 
@@ -626,6 +636,9 @@
         </div>
     </div>
     <!-- 右侧固定定位导航end -->
+    <script src="js/slideshow.js">
+
+    </script>
 
 </body>
 
